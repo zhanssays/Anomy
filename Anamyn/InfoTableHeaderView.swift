@@ -10,10 +10,16 @@ import UIKit
 import EasyPeasy
 
 class InfoTableHeaderView: UIView {
-
+    
+    var imagesArraySelected = [#imageLiteral(resourceName: "Тамак"),#imageLiteral(resourceName: "Hospital2"),#imageLiteral(resourceName: "Sport2"),#imageLiteral(resourceName: "medicine2")]
+    var imagesArrayUnselected = [#imageLiteral(resourceName: "Тамак2"),#imageLiteral(resourceName: "hospital1"),#imageLiteral(resourceName: "Sport1"),#imageLiteral(resourceName: "medicine1")]
+    
+    var names = ["Тамақ","Роды","Спорт","Медицина"]
+    
     lazy var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 120, height: 120)
+        let width = UIScreen.main.bounds.width
+        layout.itemSize = CGSize(width: width/2, height: width/2)
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
@@ -55,14 +61,20 @@ class InfoTableHeaderView: UIView {
 
 extension InfoTableHeaderView: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InfoCollId", for: indexPath) as! InfoCollectionViewCell
         //cell.titleLabel.text = "\(indexPath.item + 1)"
+        cell.foodButton.setImage(imagesArraySelected[indexPath.row], for: .normal)
+        cell.foodLabel.text = names[indexPath.row]
+        cell.frame.size.width = UIScreen.main.bounds.size.width / 3
+        cell.frame.size.height = UIScreen.main.bounds.size.width / 3
         return cell
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //        if let cell = collectionView.cellForItem(at: IndexPath(item: indexPath.item, section: indexPath.section)) as? WeekCollectionViewCell {
