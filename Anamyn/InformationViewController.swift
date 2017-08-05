@@ -26,19 +26,20 @@ class InformationViewController: UIViewController {
     }
     
     func setupViews(){
+        edgesForExtendedLayout = UIRectEdge()
         view.addSubview(tableView)
         view.addSubview(tableHeaderView)
     }
     
     func setupConstraints(){
         tableHeaderView <- [
-            Top(64),
-            Height(250),
+            Top(0),
+            Height(200),
             Left(0),
             Right(0)
         ]
         tableView <- [
-            Top(250),
+            Top().to(tableHeaderView),
             Left(),
             Right(),
             Bottom()
@@ -65,7 +66,7 @@ class InformationViewController: UIViewController {
         let header = InfoTableHeaderView()
         //header.backgroundColor = UIColor.red
         let screen = UIScreen.main.bounds
-        header.frame = CGRect(x: 0, y: 0, width: screen.width, height: 250)
+        header.frame = CGRect(x: 0, y: 0, width: screen.width, height: 200)
         //header.delegate = self
         return header
     }()
