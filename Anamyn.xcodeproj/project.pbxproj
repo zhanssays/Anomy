@@ -16,7 +16,6 @@
 		5804B4121F2B439E00565636 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5804B4111F2B439E00565636 /* FBSDKCoreKit.framework */; };
 		5804B4151F2B43BE00565636 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5804B4131F2B43BE00565636 /* FBSDKLoginKit.framework */; };
 		5804B4161F2B43BE00565636 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5804B4141F2B43BE00565636 /* FBSDKShareKit.framework */; };
-		5804B4181F2C62D600565636 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5804B4171F2C62D600565636 /* GoogleService-Info.plist */; };
 		5804B41A1F2C660200565636 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804B4191F2C660200565636 /* WelcomeViewController.swift */; };
 		5804B41E1F2C7E5600565636 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804B41D1F2C7E5600565636 /* Post.swift */; };
 		5804B4201F2C8C2E00565636 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804B41F1F2C8C2E00565636 /* Comment.swift */; };
@@ -43,6 +42,11 @@
 		5890A9961F273B90009FABF5 /* WeekTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890A9951F273B90009FABF5 /* WeekTableHeaderView.swift */; };
 		5890A9981F273EE8009FABF5 /* WeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890A9971F273EE8009FABF5 /* WeekCollectionViewCell.swift */; };
 		58F902E01F28A11B006B85A2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F902DF1F28A11B006B85A2 /* SettingsTableViewCell.swift */; };
+		93E63A5F1F35C12A00A8E168 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A5E1F35C12A00A8E168 /* NamesViewController.swift */; };
+		93E63A611F35C4C900A8E168 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93E63A601F35C4C900A8E168 /* GoogleService-Info.plist */; };
+		93E63A631F35CBFE00A8E168 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A621F35CBFE00A8E168 /* NameTableViewCell.swift */; };
+		93E63A651F35D1D500A8E168 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A641F35D1D500A8E168 /* Name.swift */; };
+		93E63A671F35D67C00A8E168 /* NewNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A661F35D67C00A8E168 /* NewNamesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +59,6 @@
 		5804B4111F2B439E00565636 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		5804B4131F2B43BE00565636 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		5804B4141F2B43BE00565636 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
-		5804B4171F2C62D600565636 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5804B4191F2C660200565636 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5804B41D1F2C7E5600565636 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5804B41F1F2C8C2E00565636 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -85,6 +88,11 @@
 		5890A9951F273B90009FABF5 /* WeekTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTableHeaderView.swift; sourceTree = "<group>"; };
 		5890A9971F273EE8009FABF5 /* WeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewCell.swift; sourceTree = "<group>"; };
 		58F902DF1F28A11B006B85A2 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		93E63A5E1F35C12A00A8E168 /* NamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
+		93E63A601F35C4C900A8E168 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93E63A621F35CBFE00A8E168 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		93E63A641F35D1D500A8E168 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		93E63A661F35D67C00A8E168 /* NewNamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNamesViewController.swift; sourceTree = "<group>"; };
 		B709808ADE43FC265C1382AA /* Pods-Anamyn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anamyn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anamyn/Pods-Anamyn.debug.xcconfig"; sourceTree = "<group>"; };
 		F4572FD25CCE14FE4FB5A651 /* Pods_Anamyn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anamyn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +128,7 @@
 				5804B41D1F2C7E5600565636 /* Post.swift */,
 				5804B41F1F2C8C2E00565636 /* Comment.swift */,
 				5804E3DD1F3479E900A3324C /* Weight.swift */,
+				93E63A641F35D1D500A8E168 /* Name.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -154,12 +163,14 @@
 				587171101F31C3FC004E9DF1 /* NewQuestionViewController.swift */,
 				5804B4251F2C941400565636 /* QuestionViewController.swift */,
 				5804B4271F2C968300565636 /* CommentViewController.swift */,
+				93E63A5E1F35C12A00A8E168 /* NamesViewController.swift */,
+				93E63A661F35D67C00A8E168 /* NewNamesViewController.swift */,
 				58753DD11F1DD2BA00A7A4FB /* AppDelegate.swift */,
 				58753DD31F1DD2BA00A7A4FB /* ViewController.swift */,
 				58753DDB1F1DD2BA00A7A4FB /* Assets.xcassets */,
 				58753DDD1F1DD2BA00A7A4FB /* LaunchScreen.storyboard */,
 				58753DE01F1DD2BA00A7A4FB /* Info.plist */,
-				5804B4171F2C62D600565636 /* GoogleService-Info.plist */,
+				93E63A601F35C4C900A8E168 /* GoogleService-Info.plist */,
 				58753DD81F1DD2BA00A7A4FB /* Anamyn.xcdatamodeld */,
 				58047CC21F25E52C00078F32 /* BabyViewController.swift */,
 				58047CC81F26107800078F32 /* TableViewController.swift */,
@@ -183,6 +194,7 @@
 				58F902DF1F28A11B006B85A2 /* SettingsTableViewCell.swift */,
 				5804E3E31F358AA000A3324C /* InfoTableViewCell.swift */,
 				5804E3E11F358A2B00A3324C /* InfoCollectionViewCell.swift */,
+				93E63A621F35CBFE00A8E168 /* NameTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -264,7 +276,7 @@
 			files = (
 				58753DDF1F1DD2BA00A7A4FB /* LaunchScreen.storyboard in Resources */,
 				58753DDC1F1DD2BA00A7A4FB /* Assets.xcassets in Resources */,
-				5804B4181F2C62D600565636 /* GoogleService-Info.plist in Resources */,
+				93E63A611F35C4C900A8E168 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C12116C8DB21DFEB6AE4DB8F /* [CP] Embed Pods Frameworks */ = {
@@ -324,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5804E3E81F35B96A00A3324C /* AddWeightViewController.swift in Sources */,
+				93E63A5F1F35C12A00A8E168 /* NamesViewController.swift in Sources */,
+				93E63A651F35D1D500A8E168 /* Name.swift in Sources */,
 				58753DD41F1DD2BA00A7A4FB /* ViewController.swift in Sources */,
 				58753DD21F1DD2BA00A7A4FB /* AppDelegate.swift in Sources */,
 				5890A9981F273EE8009FABF5 /* WeekCollectionViewCell.swift in Sources */,
@@ -341,11 +355,13 @@
 				5804B4241F2C93C000565636 /* QuestionTableViewCell.swift in Sources */,
 				5804E3D71F3302E400A3324C /* WeightViewController.swift in Sources */,
 				5804B41E1F2C7E5600565636 /* Post.swift in Sources */,
+				93E63A671F35D67C00A8E168 /* NewNamesViewController.swift in Sources */,
 				58753DDA1F1DD2BA00A7A4FB /* Anamyn.xcdatamodeld in Sources */,
 				5804B4201F2C8C2E00565636 /* Comment.swift in Sources */,
 				5890A9941F273B15009FABF5 /* BalaTableViewCell.swift in Sources */,
 				5804E3E01F35877000A3324C /* InformationViewController.swift in Sources */,
 				58047CC91F26107800078F32 /* TableViewController.swift in Sources */,
+				93E63A631F35CBFE00A8E168 /* NameTableViewCell.swift in Sources */,
 				5804B42A1F2C96A900565636 /* CommentTableViewCell.swift in Sources */,
 				5804E3E61F358F2600A3324C /* InfoTableHeaderView.swift in Sources */,
 				58047CC71F25E59E00078F32 /* SettingsViewController.swift in Sources */,
