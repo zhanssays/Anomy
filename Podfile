@@ -15,6 +15,7 @@ target 'Anamyn' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'SVProgressHUD'
   pod 'ObjectMapper'
   pod 'Sugar'
@@ -23,4 +24,6 @@ target 'Anamyn' do
   pod 'UITextView+Placeholder'
   pod 'DateToolsSwift'
   pod 'ALTextInputBar'
+  pod 'Kingfisher'
+  pod 'ImagePicker'
 end

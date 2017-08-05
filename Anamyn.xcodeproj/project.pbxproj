@@ -48,6 +48,9 @@
 		93E63A631F35CBFE00A8E168 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A621F35CBFE00A8E168 /* NameTableViewCell.swift */; };
 		93E63A651F35D1D500A8E168 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A641F35D1D500A8E168 /* Name.swift */; };
 		93E63A671F35D67C00A8E168 /* NewNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A661F35D67C00A8E168 /* NewNamesViewController.swift */; };
+		93E63A6B1F35E07400A8E168 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A6A1F35E07400A8E168 /* PhotosViewController.swift */; };
+		93E63A6D1F35E0A300A8E168 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A6C1F35E0A300A8E168 /* PhotoCollectionViewCell.swift */; };
+		93E63A6F1F35E39700A8E168 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E63A6E1F35E39700A8E168 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +98,9 @@
 		93E63A621F35CBFE00A8E168 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
 		93E63A641F35D1D500A8E168 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		93E63A661F35D67C00A8E168 /* NewNamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNamesViewController.swift; sourceTree = "<group>"; };
+		93E63A6A1F35E07400A8E168 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		93E63A6C1F35E0A300A8E168 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		93E63A6E1F35E39700A8E168 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B709808ADE43FC265C1382AA /* Pods-Anamyn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anamyn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anamyn/Pods-Anamyn.debug.xcconfig"; sourceTree = "<group>"; };
 		F4572FD25CCE14FE4FB5A651 /* Pods_Anamyn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anamyn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +137,7 @@
 				5804B41F1F2C8C2E00565636 /* Comment.swift */,
 				5804E3DD1F3479E900A3324C /* Weight.swift */,
 				93E63A641F35D1D500A8E168 /* Name.swift */,
+				93E63A6E1F35E39700A8E168 /* Photo.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 				5804B4271F2C968300565636 /* CommentViewController.swift */,
 				93E63A5E1F35C12A00A8E168 /* NamesViewController.swift */,
 				93E63A661F35D67C00A8E168 /* NewNamesViewController.swift */,
+				93E63A6A1F35E07400A8E168 /* PhotosViewController.swift */,
 				58753DD11F1DD2BA00A7A4FB /* AppDelegate.swift */,
 				58753DD31F1DD2BA00A7A4FB /* ViewController.swift */,
 				58753DDB1F1DD2BA00A7A4FB /* Assets.xcassets */,
@@ -198,6 +206,7 @@
 				5804E3E31F358AA000A3324C /* InfoTableViewCell.swift */,
 				5804E3E11F358A2B00A3324C /* InfoCollectionViewCell.swift */,
 				93E63A621F35CBFE00A8E168 /* NameTableViewCell.swift */,
+				93E63A6C1F35E0A300A8E168 /* PhotoCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -249,7 +258,7 @@
 				TargetAttributes = {
 					58753DCD1F1DD2BA00A7A4FB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MGHS6Y9MP7;
+						DevelopmentTeam = AB65P3C5XF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,7 +359,9 @@
 				58047CC31F25E52C00078F32 /* BabyViewController.swift in Sources */,
 				58047CC11F25C9E500078F32 /* MoreViewController.swift in Sources */,
 				5890A9961F273B90009FABF5 /* WeekTableHeaderView.swift in Sources */,
+				93E63A6B1F35E07400A8E168 /* PhotosViewController.swift in Sources */,
 				5804B4281F2C968300565636 /* CommentViewController.swift in Sources */,
+				93E63A6F1F35E39700A8E168 /* Photo.swift in Sources */,
 				5804B4261F2C941400565636 /* QuestionViewController.swift in Sources */,
 				5804E3E41F358AA000A3324C /* InfoTableViewCell.swift in Sources */,
 				5804E3E21F358A2B00A3324C /* InfoCollectionViewCell.swift in Sources */,
@@ -359,6 +370,7 @@
 				5804E3EA1F35F4F400A3324C /* InfooViewController.swift in Sources */,
 				5804E3D71F3302E400A3324C /* WeightViewController.swift in Sources */,
 				5804B41E1F2C7E5600565636 /* Post.swift in Sources */,
+				93E63A6D1F35E0A300A8E168 /* PhotoCollectionViewCell.swift in Sources */,
 				93E63A671F35D67C00A8E168 /* NewNamesViewController.swift in Sources */,
 				58753DDA1F1DD2BA00A7A4FB /* Anamyn.xcdatamodeld in Sources */,
 				5804B4201F2C8C2E00565636 /* Comment.swift in Sources */,
@@ -487,7 +499,7 @@
 			baseConfigurationReference = B709808ADE43FC265C1382AA /* Pods-Anamyn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MGHS6Y9MP7;
+				DEVELOPMENT_TEAM = AB65P3C5XF;
 				INFOPLIST_FILE = Anamyn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhansaya.Anamyn;
@@ -501,7 +513,7 @@
 			baseConfigurationReference = 3A39C4027FF95BD11E51EB8A /* Pods-Anamyn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MGHS6Y9MP7;
+				DEVELOPMENT_TEAM = AB65P3C5XF;
 				INFOPLIST_FILE = Anamyn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhansaya.Anamyn;

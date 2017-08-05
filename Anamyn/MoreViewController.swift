@@ -16,11 +16,14 @@ class MoreViewController : UIViewController{
         setupConstraints()
         view.backgroundColor = UIColor.white
     }
+
+    var isIphone5 = UIScreen.main.bounds.width == 320
+    var isIphone6plus = UIScreen.main.bounds.width == 414
     
     lazy var weightButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "item1"), for: .normal)
-        button.sizeToFit()
+        button.contentMode = .scaleAspectFit
         button.addTarget(self, action: #selector(weightWindow), for: .touchUpInside)
         return button
     }()
@@ -35,7 +38,7 @@ class MoreViewController : UIViewController{
     lazy var infoButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "item2"), for: .normal)
-        button.sizeToFit()
+        button.contentMode = .scaleAspectFit
         button.addTarget(self, action: #selector(infoWindow), for: .touchUpInside)
         return button
     }()
@@ -50,7 +53,7 @@ class MoreViewController : UIViewController{
     lazy var nameButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "Item3"), for: .normal)
-        button.sizeToFit()
+        button.contentMode = .scaleAspectFit
         button.addTarget(self, action: #selector(nameWindow), for: .touchUpInside)
         return button
     }()
@@ -65,7 +68,7 @@ class MoreViewController : UIViewController{
     lazy var birthButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "item4"), for: .normal)
-        button.sizeToFit()
+        button.contentMode = .scaleAspectFit
         return button
     }()
     
@@ -79,7 +82,7 @@ class MoreViewController : UIViewController{
     lazy var todoButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "item5"), for: .normal)
-        button.sizeToFit()
+        button.contentMode = .scaleAspectFit
         return button
     }()
 
@@ -93,7 +96,8 @@ class MoreViewController : UIViewController{
     lazy var photoButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "item6"), for: .normal)
-        button.sizeToFit()
+        button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(photosWindow), for: .touchUpInside)
         return button
     }()
     
@@ -107,8 +111,8 @@ class MoreViewController : UIViewController{
     private func setupConstraints(){
         weightButton <- [
             Top(78),
-            Left(38),
-            
+            isIphone5 ? Left(28) : Left(38),
+            isIphone5 ? Size(100) : (isIphone6plus ? Size(130) : Size(117))
         ]
         weigthLabel <- [
             Top(8).to(weightButton),
@@ -118,8 +122,8 @@ class MoreViewController : UIViewController{
         ]
         infoButton <- [
             Top(78),
-            Right(38),
-            
+            isIphone5 ? Right(28) : Right(38),
+            isIphone5 ? Size(100) : (isIphone6plus ? Size(130) : Size(117))
         ]
         infoLabel <- [
             Top(8).to(infoButton),
@@ -128,9 +132,9 @@ class MoreViewController : UIViewController{
             
         ]
         nameButton <- [
-            Top(40).to(weigthLabel),
-            Left(38),
-            
+            isIphone5 ? Top(16).to(weigthLabel) : Top(40).to(weigthLabel),
+            isIphone5 ? Left(28) : Left(38),
+            isIphone5 ? Size(100) : (isIphone6plus ? Size(130) : Size(117))
         ]
         nameLabel <- [
             Top(8).to(nameButton),
@@ -140,10 +144,10 @@ class MoreViewController : UIViewController{
         ]
         
         birthButton <- [
-            Top(40).to(infoLabel),
+            isIphone5 ? Top(16).to(infoLabel) : Top(40).to(infoLabel),
             //Left(77).to(infoButton),
-             Right(38)
-            
+             isIphone5 ? Right(28) : Right(38),
+            isIphone5 ? Size(100) : (isIphone6plus ? Size(130) : Size(117))
         ]
         
         bitrhLabel <- [
@@ -155,9 +159,9 @@ class MoreViewController : UIViewController{
         ]
         
         todoButton <- [
-            Top(40).to(nameLabel),
-            Left(38)
-            
+            isIphone5 ? Top(16).to(nameLabel) : Top(40).to(nameLabel),
+            isIphone5 ? Left(28) : Left(38),
+            isIphone5 ? Size(100) : (isIphone6plus ? Size(130) : Size(117))
         ]
         
         todoLabel <- [
@@ -169,9 +173,9 @@ class MoreViewController : UIViewController{
         ]
         
         photoButton <- [
-            Top(40).to(bitrhLabel),
-            Right(38)
-            
+            isIphone5 ? Top(16).to(bitrhLabel) : Top(40).to(bitrhLabel),
+            isIphone5 ? Right(28) : Right(38),
+            isIphone5 ? Size(100) : (isIphone6plus ? Size(130) : Size(117))
         ]
         
         photoLabel <- [
@@ -211,6 +215,11 @@ class MoreViewController : UIViewController{
 
     func nameWindow(){
         let vc = NamesViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func photosWindow(){
+        let vc = MyPhotosViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

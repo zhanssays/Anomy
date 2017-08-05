@@ -97,8 +97,9 @@ class WeightViewController: UIViewController {
 //        
         weigthAddButton <- [
             Top(100),
-            Left(),
-            Right()
+            Left(16),
+            Right(16),
+            Height(40)
         ]
 
         beginnerLabel <- [
@@ -151,7 +152,7 @@ class WeightViewController: UIViewController {
     lazy var weigthAddButton: UIButton = {
         var button = UIButton()
         button.setImage(#imageLiteral(resourceName: "buttonAddWeight"), for: .normal)
-        button.sizeToFit()
+        button.imageView?.contentMode = .scaleAspectFit
         button.addTarget(self, action: #selector(addOrEditWeight), for: .touchUpInside)
         return button
     }()
