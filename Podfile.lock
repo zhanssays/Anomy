@@ -23,6 +23,9 @@ PODS:
   - Firebase/Database (4.0.3):
     - Firebase/Core
     - FirebaseDatabase (= 4.0.0)
+  - Firebase/Storage (4.0.3):
+    - Firebase/Core
+    - FirebaseStorage (= 2.0.0)
   - FirebaseAnalytics (4.0.2):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -37,6 +40,10 @@ PODS:
     - FirebaseAnalytics (~> 4.0)
   - FirebaseInstanceID (2.0.0):
     - FirebaseCore (~> 4.0)
+  - FirebaseStorage (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleToolboxForMac/DebugUtils (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/Defines (2.1.1)
@@ -48,6 +55,8 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
+  - ImagePicker (2.1.1)
+  - Kingfisher (3.10.2)
   - MGInstagram (0.1.0)
   - ObjectMapper (2.2.7)
   - Reusable (4.0.0):
@@ -71,6 +80,9 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Storage
+  - ImagePicker
+  - Kingfisher
   - MGInstagram
   - ObjectMapper
   - Reusable
@@ -94,8 +106,11 @@ SPEC CHECKSUMS:
   FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
   FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  ImagePicker: fe4c699abb56ff03994fa98d8b02e3883ee118be
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   MGInstagram: c85a061e25b053ad1cb1227675e238ce6cc50221
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
@@ -105,6 +120,6 @@ SPEC CHECKSUMS:
   TLYShyNavBar: d200e598923fbc2bd21a5c5efdfabf4898b11da0
   UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
 
-PODFILE CHECKSUM: 6dae465a1716fa4941e1709c62bc8a621ee8cf88
+PODFILE CHECKSUM: e2bf986722c542fbdc23668d01030c944a39c408
 
 COCOAPODS: 1.2.0

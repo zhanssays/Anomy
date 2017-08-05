@@ -94,6 +94,7 @@ class MoreViewController : UIViewController{
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "item6"), for: .normal)
         button.sizeToFit()
+        button.addTarget(self, action: #selector(photosWindow), for: .touchUpInside)
         return button
     }()
     
@@ -211,6 +212,11 @@ class MoreViewController : UIViewController{
 
     func nameWindow(){
         let vc = NamesViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func photosWindow(){
+        let vc = MyPhotosViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
