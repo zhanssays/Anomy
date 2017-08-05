@@ -1,0 +1,110 @@
+PODS:
+  - ALTextInputBar (1.1.5)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - DateToolsSwift (2.0.3)
+  - EasyPeasy (1.4.2)
+  - FBSDKCoreKit (4.24.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.24.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.24.0):
+    - FBSDKCoreKit
+  - Firebase/Auth (4.0.3):
+    - Firebase/Core
+    - FirebaseAuth (= 4.0.0)
+  - Firebase/Core (4.0.3):
+    - FirebaseAnalytics (= 4.0.2)
+    - FirebaseCore (= 4.0.3)
+  - Firebase/Database (4.0.3):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.0.0)
+  - FirebaseAnalytics (4.0.2):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseAuth (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (4.0.3):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
+  - GTMSessionFetcher/Core (1.1.10)
+  - MGInstagram (0.1.0)
+  - ObjectMapper (2.2.7)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - Sugar (3.1.2)
+  - SVProgressHUD (2.1.2)
+  - Tactile (2.0)
+  - TLYShyNavBar (1.1.1)
+  - UITextView+Placeholder (1.2.0)
+
+DEPENDENCIES:
+  - ALTextInputBar
+  - DateToolsSwift
+  - EasyPeasy
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Database
+  - MGInstagram
+  - ObjectMapper
+  - Reusable
+  - Sugar
+  - SVProgressHUD
+  - Tactile
+  - TLYShyNavBar
+  - UITextView+Placeholder
+
+SPEC CHECKSUMS:
+  ALTextInputBar: 9e9b9323ffd53cc77497d51b025e46d53aa2dc1e
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
+  EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
+  FBSDKCoreKit: f8c9eb0dd34a9cd277c7b60da4b32226d142502d
+  FBSDKLoginKit: 1214c6d5a1c4995b694d8db8a9ba6910c6028acf
+  FBSDKShareKit: a2ed9d7781a4eda9ac20d7404305e795b10251ac
+  Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
+  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
+  FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
+  FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
+  FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  MGInstagram: c85a061e25b053ad1cb1227675e238ce6cc50221
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  Sugar: e2eb40928c2589bf55977e335a5bc183d09cce24
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  Tactile: 22d5686693be17568351b95aa83ef37457cd40f4
+  TLYShyNavBar: d200e598923fbc2bd21a5c5efdfabf4898b11da0
+  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+
+PODFILE CHECKSUM: 6dae465a1716fa4941e1709c62bc8a621ee8cf88
+
+COCOAPODS: 1.2.1
