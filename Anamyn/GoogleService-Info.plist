@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>615340303197-7hmvrb9kg6n3osts3cs5gk8q6d3adeh2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.615340303197-7hmvrb9kg6n3osts3cs5gk8q6d3adeh2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC-hkdCt1M6ZwjdJ1B4MhUAHig4hLZv5G0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>615340303197</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zhansaya.Anamyn</string>
+	<key>PROJECT_ID</key>
+	<string>anamyn-324dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anamyn-324dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:615340303197:ios:b0398ca64be860fe</string>
+	<key>DATABASE_URL</key>
+	<string>https://anamyn-324dc.firebaseio.com</string>
+</dict>
+</plist>

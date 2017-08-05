@@ -51,6 +51,7 @@ class MoreViewController : UIViewController{
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "Item3"), for: .normal)
         button.sizeToFit()
+        button.addTarget(self, action: #selector(nameWindow), for: .touchUpInside)
         return button
     }()
     
@@ -205,6 +206,11 @@ class MoreViewController : UIViewController{
     
     func infoWindow(){
         let vc = InformationViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func nameWindow(){
+        let vc = NamesViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
