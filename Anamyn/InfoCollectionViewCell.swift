@@ -25,7 +25,7 @@ class InfoCollectionViewCell: UICollectionViewCell {
         //var image = UIImage()
         //button.setImage(image, for: .normal)
         button.sizeToFit()
-        button.sizeToFit()
+        button.isUserInteractionEnabled = false
         //button.addTarget(self, action: #selector(infoWindow), for: .touchUpInside)
         return button
     }()

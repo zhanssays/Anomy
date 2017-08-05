@@ -9,7 +9,19 @@
 import UIKit
 import EasyPeasy
 
+//protocol InfoTableHeaderViewDelegate2: class {
+//    func didUnselectButton()
+//}
+protocol InfoTableHeaderViewDelegate: class {
+    //func didSelectWeek(index:Int)
+    func selectRow(index:Int)
+    //func didUnselectWeek()
+}
+
 class InfoTableHeaderView: UIView {
+    
+    weak var delegate: InfoTableHeaderViewDelegate?
+    //weak var delegate2 :  InfoTableHeaderViewDelegate2?
     
     var imagesArraySelected = [#imageLiteral(resourceName: "Тамак"),#imageLiteral(resourceName: "Hospital2"),#imageLiteral(resourceName: "Sport2"),#imageLiteral(resourceName: "medicine2")]
     var imagesArrayUnselected = [#imageLiteral(resourceName: "Тамак2"),#imageLiteral(resourceName: "hospital1"),#imageLiteral(resourceName: "Sport1"),#imageLiteral(resourceName: "medicine1")]
@@ -74,8 +86,6 @@ extension InfoTableHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
         return cell
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //        if let cell = collectionView.cellForItem(at: IndexPath(item: indexPath.item, section: indexPath.section)) as? WeekCollectionViewCell {
         //
@@ -83,7 +93,7 @@ extension InfoTableHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
         //            cell.titleLabel.textColor = .black
         //        }
         //delegate?.didSelectWeek(index: indexPath.item+1)
-        //delegate?.selectRow(index: indexPath.item)
+        delegate?.selectRow(index: indexPath.item)
     }
 }
 

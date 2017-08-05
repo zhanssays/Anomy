@@ -31,6 +31,7 @@
 		5804E3E41F358AA000A3324C /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804E3E31F358AA000A3324C /* InfoTableViewCell.swift */; };
 		5804E3E61F358F2600A3324C /* InfoTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804E3E51F358F2600A3324C /* InfoTableHeaderView.swift */; };
 		5804E3E81F35B96A00A3324C /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804E3E71F35B96A00A3324C /* AddWeightViewController.swift */; };
+		5804E3EA1F35F4F400A3324C /* InfooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804E3E91F35F4F400A3324C /* InfooViewController.swift */; };
 		587171111F31C3FC004E9DF1 /* NewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587171101F31C3FC004E9DF1 /* NewQuestionViewController.swift */; };
 		58753DD21F1DD2BA00A7A4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58753DD11F1DD2BA00A7A4FB /* AppDelegate.swift */; };
 		58753DD41F1DD2BA00A7A4FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58753DD31F1DD2BA00A7A4FB /* ViewController.swift */; };
@@ -75,6 +76,7 @@
 		5804E3E31F358AA000A3324C /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		5804E3E51F358F2600A3324C /* InfoTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableHeaderView.swift; sourceTree = "<group>"; };
 		5804E3E71F35B96A00A3324C /* AddWeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
+		5804E3E91F35F4F400A3324C /* InfooViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfooViewController.swift; sourceTree = "<group>"; };
 		587171101F31C3FC004E9DF1 /* NewQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewQuestionViewController.swift; sourceTree = "<group>"; };
 		58753DCE1F1DD2BA00A7A4FB /* Anamyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anamyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58753DD11F1DD2BA00A7A4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				58753DE61F1DD41B00A7A4FB /* CustomTabBarController.swift */,
 				5804E3E71F35B96A00A3324C /* AddWeightViewController.swift */,
 				5804E3DF1F35876F00A3324C /* InformationViewController.swift */,
+				5804E3E91F35F4F400A3324C /* InfooViewController.swift */,
 				5804E3D61F3302E400A3324C /* WeightViewController.swift */,
 				587171101F31C3FC004E9DF1 /* NewQuestionViewController.swift */,
 				5804B4251F2C941400565636 /* QuestionViewController.swift */,
@@ -295,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C12116C8DB21DFEB6AE4DB8F /* [CP] Embed Pods Frameworks */ = {
@@ -353,6 +356,7 @@
 				5804E3E21F358A2B00A3324C /* InfoCollectionViewCell.swift in Sources */,
 				5804E3DA1F34317700A3324C /* WeightTableViewCell.swift in Sources */,
 				5804B4241F2C93C000565636 /* QuestionTableViewCell.swift in Sources */,
+				5804E3EA1F35F4F400A3324C /* InfooViewController.swift in Sources */,
 				5804E3D71F3302E400A3324C /* WeightViewController.swift in Sources */,
 				5804B41E1F2C7E5600565636 /* Post.swift in Sources */,
 				93E63A671F35D67C00A8E168 /* NewNamesViewController.swift in Sources */,
