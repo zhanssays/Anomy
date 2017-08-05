@@ -68,7 +68,9 @@ final class MyPhotosViewController: UIViewController, UICollectionViewDataSource
             let imagePickerController = ImagePickerController(configuration: configuration)
             imagePickerController.delegate = self
             imagePickerController.imageLimit = 1
-            self.tabBarController?.present(imagePickerController, animated: true, completion: nil)
+            imagePickerController.edgesForExtendedLayout = UIRectEdge()
+            imagePickerController.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(imagePickerController, animated: true)
         }
         return cell
     }
@@ -79,7 +81,7 @@ final class MyPhotosViewController: UIViewController, UICollectionViewDataSource
     }
 
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-        dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
         guard let image = images.first, let selectedIndexPath = selectedIndexPath else { return }
         let selectedPhotoId = "photo\(selectedIndexPath.item)"
         SVProgressHUD.show()
